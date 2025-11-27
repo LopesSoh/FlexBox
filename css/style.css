@@ -55,7 +55,7 @@ body {
 /* Estilo geral dos cartões de postagem */
 .post-card {
     background-color: #ffffff;
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     overflow: hidden; /* Para manter a imagem dentro dos limites */
     display: flex; /* Para controlar o layout interno, especialmente nas postagens laterais */
@@ -103,7 +103,7 @@ body {
     grid-column: 3; /* Posiciona na terceira coluna */
 }
 
-.side-post {
+.post-lateral {
     display: flex;
     flex-direction: row-reverse; /* Coloca a imagem à direita */
     border-bottom: 1px solid #eee; /* Separador entre as postagens laterais */
@@ -111,7 +111,7 @@ body {
     padding-top: 5px;
 }
 
-.side-post:last-child {
+.post-lateral:last-child {
     border-bottom: none; /* Remove o separador da última postagem */
 }
 
@@ -121,14 +121,14 @@ body {
     border-radius: 10px;
 }
 
-.side-post .post-date {
+.post-lateral .post-date {
     display: block;
     font-size: 0.75em;
     color: #999;
     margin-bottom: 3px;
 }
 
-.side-post .post-title-small {
+.post-lateral .post-title-small {
     font-size: 0.9em;
     font-weight: normal;
     margin: 0;
@@ -150,4 +150,7 @@ body {
     object-fit: cover;
 }
 
-
+.post-highlight .side-post-image-container {
+    width: 70px;
+    height: 70px;
+}
